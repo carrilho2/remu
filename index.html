@@ -2,23 +2,49 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>REMUANT</title>
   <style>
     body {
       margin: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       background-color: black;
       color: white;
       font-family: Consolas, 'Courier New', monospace;
-      font-size: 12px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: black;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: gray;
+      color: white;
     }
   </style>
 </head>
 <body>
-  REMUANT ©
+  <h1>REMUANT ©</h1>
+  <button onclick="startGame()">Jogar</button>
+
+  <script>
+    function startGame() {
+      window.location.href = 'chrome://dino/';
+    }
+  </script>
 </body>
 </html>
