@@ -11,18 +11,23 @@
       color: white;
       font-family: Consolas, 'Courier New', monospace;
       font-size: 12px;
+      text-align: center;
     }
 
-    body::after {
-      content: 'REMUANT © está offline';
+    .footer {
       position: absolute;
       top: 10%;
-      left: 20%;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: large;
     }
-    
   </style>
 </head>
 <body>
+  <div class="footer">
+    REMUANT ©<br>
+    está offline!<br>
+    <a href="mailto:info@remuant.pt" style="color: white; text-decoration: none;">info@remuant.pt</a>
+  </div>
 </body>
-</html> 
+</html>
